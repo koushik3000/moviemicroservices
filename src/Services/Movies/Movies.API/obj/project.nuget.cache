@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "JzENmW4HyZD8IDKaYvp52u/a6YVRDyq+tzXz+xmH5y91WkV524sQD++qAgwtAKCmGarmOXoldmSf6vcPuImouw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Koushik Mamilla\\source\\repos\\moviemicroservices\\src\\Services\\Movies\\Movies.API\\Movies.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Koushik Mamilla\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Koushik Mamilla\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Koushik Mamilla\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Koushik Mamilla\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Koushik Mamilla\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Koushik Mamilla\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
