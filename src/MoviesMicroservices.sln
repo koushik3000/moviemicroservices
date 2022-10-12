@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D5179786-89E5-4B7C-B959-DC8F57C571CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Movies", "Movies", "{1EF1F064-F86A-4481-AA41-F1C7238355FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.API", "Services\Movies\Movies.API\Movies.API.csproj", "{7C272A99-3C8F-4B31-B5A3-0949ADC10E72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C272A99-3C8F-4B31-B5A3-0949ADC10E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C272A99-3C8F-4B31-B5A3-0949ADC10E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C272A99-3C8F-4B31-B5A3-0949ADC10E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C272A99-3C8F-4B31-B5A3-0949ADC10E72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1EF1F064-F86A-4481-AA41-F1C7238355FD} = {D5179786-89E5-4B7C-B959-DC8F57C571CA}
+		{7C272A99-3C8F-4B31-B5A3-0949ADC10E72} = {1EF1F064-F86A-4481-AA41-F1C7238355FD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25BEF468-D543-41B7-ABFD-083785E2B8B5}
+	EndGlobalSection
+EndGlobal
