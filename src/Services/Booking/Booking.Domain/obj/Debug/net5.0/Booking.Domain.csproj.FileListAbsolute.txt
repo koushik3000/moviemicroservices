@@ -1,0 +1,11 @@
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\bin\Debug\net5.0\Booking.Domain.deps.json
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\bin\Debug\net5.0\Booking.Domain.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\bin\Debug\net5.0\ref\Booking.Domain.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\bin\Debug\net5.0\Booking.Domain.pdb
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\Booking.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\Booking.Domain.AssemblyInfoInputs.cache
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\Booking.Domain.AssemblyInfo.cs
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\Booking.Domain.csproj.CoreCompileInputs.cache
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\Booking.Domain.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\ref\Booking.Domain.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\Booking.Domain.pdb

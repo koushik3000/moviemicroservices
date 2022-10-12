@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+
+  bookingdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
+  booking.api:
+    image: ${DOCKER_REGISTRY-}bookingapi
+    build:
+      context: .
+      dockerfile: Services/Booking/Booking.API/Dockerfile
+

@@ -193,19 +193,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Koushik Mamilla\\.nuget\\packages\\": {}
+    "C:\\Users\\phani\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Koushik Mamilla\\source\\repos\\moviemicroservices\\src\\Services\\Movies\\Movies.API\\Movies.API.csproj",
+      "projectUniqueName": "C:\\Users\\phani\\Source\\Repos\\moviemicroservices\\src\\Services\\Movies\\Movies.API\\Movies.API.csproj",
       "projectName": "Movies.API",
-      "projectPath": "C:\\Users\\Koushik Mamilla\\source\\repos\\moviemicroservices\\src\\Services\\Movies\\Movies.API\\Movies.API.csproj",
-      "packagesPath": "C:\\Users\\Koushik Mamilla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Koushik Mamilla\\source\\repos\\moviemicroservices\\src\\Services\\Movies\\Movies.API\\obj\\",
+      "projectPath": "C:\\Users\\phani\\Source\\Repos\\moviemicroservices\\src\\Services\\Movies\\Movies.API\\Movies.API.csproj",
+      "packagesPath": "C:\\Users\\phani\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\phani\\Source\\Repos\\moviemicroservices\\src\\Services\\Movies\\Movies.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Koushik Mamilla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\phani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -254,7 +254,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
       }
     }
   }

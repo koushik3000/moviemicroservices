@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+    
+  bookingdb:
+    container_name: bookingdb
+    environment:
+        MSSQL_SA_PASSWORD: "SwN12345678"
+        ACCEPT_EULA: "Y"
+        
+    restart: always
+    ports:
+        - "1433:1433"
+
+
+  booking.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:SqlServerConnstr= Server=bookingdb;Database=BookingDb; User Id= SA ;Password= SwN12345678"
+    depends_on:
+      - bookingdb
+    ports:
+      - "6005:80"
