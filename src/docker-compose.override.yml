@@ -20,4 +20,4 @@ services:
     depends_on:
       - bookingdb
     ports:
-      - "6005:80"
+      - "2005:80"

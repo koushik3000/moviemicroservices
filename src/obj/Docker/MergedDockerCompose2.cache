@@ -1,0 +1,91 @@
+name: dockercompose4238872244553067560
+services:
+  booking.api:
+    build:
+      context: C:\Users\phani\Source\Repos\moviemicroservices\src
+      dockerfile: Services/Booking/Booking.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Booking.API
+      target: base
+    container_name: Booking.API
+    depends_on:
+      bookingdb:
+        condition: service_started
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings:SqlServerConnstr: ' Server=bookingdb;Database=BookingDb; User
+        Id= SA ;Password= SwN12345678'
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: bookingapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "2005"
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.API
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\phani\Source\Repos\moviemicroservices\src
+      target: /src
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\phani\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\phani\.nuget\packages\
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\phani\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\phani\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+  bookingdb:
+    container_name: bookingdb
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: SwN12345678
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "1433"
+      protocol: tcp
+    restart: always
+networks:
+  default:
+    name: dockercompose4238872244553067560_default

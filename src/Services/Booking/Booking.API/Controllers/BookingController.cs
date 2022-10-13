@@ -22,7 +22,6 @@ namespace Booking.API.Controllers
             _repository = repository;
         }
 
-
         [HttpPost(Name = "PostBooking")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
 
@@ -37,6 +36,7 @@ namespace Booking.API.Controllers
         public async Task<ActionResult<IEnumerable<TicketBooking>>> GetAllBookings()
         {
             var res = await _repository.GetAllBookings();
+            
             return Ok(res);
         }
 

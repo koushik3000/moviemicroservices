@@ -9,3 +9,4 @@ C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Doma
 C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\Booking.Domain.dll
 C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\ref\Booking.Domain.dll
 C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\Booking.Domain.pdb
+C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.Domain\obj\Debug\net5.0\Booking.Domain.csproj.AssemblyReference.cache
