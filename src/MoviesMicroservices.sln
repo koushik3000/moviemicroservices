@@ -13,9 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Booking", "Booking", "{A0F5
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.API", "Services\Booking\Booking.API\Booking.API.csproj", "{CBD7E72D-2F11-4101-B260-14576E06B96D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Domain", "Services\Booking\Booking.Domain\Booking.Domain.csproj", "{55999DA5-386E-49AA-8954-103CCF3454F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Domain", "Services\Booking\Booking.Domain\Booking.Domain.csproj", "{55999DA5-386E-49AA-8954-103CCF3454F4}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A05B8F73-E9F2-4370-98CC-E95F333381D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{6EF851B6-563C-4177-AD93-5112434BA478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.API", "Payment\Payment.API\Payment.API.csproj", "{34306C28-16DF-4300-804A-EAFFC279DC7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{A05B8F73-E9F2-4370-98CC-E95F333381D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A05B8F73-E9F2-4370-98CC-E95F333381D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A05B8F73-E9F2-4370-98CC-E95F333381D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34306C28-16DF-4300-804A-EAFFC279DC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34306C28-16DF-4300-804A-EAFFC279DC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34306C28-16DF-4300-804A-EAFFC279DC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34306C28-16DF-4300-804A-EAFFC279DC7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +57,8 @@ Global
 		{A0F56308-AB21-45E8-8E3A-E59435B9AF27} = {D5179786-89E5-4B7C-B959-DC8F57C571CA}
 		{CBD7E72D-2F11-4101-B260-14576E06B96D} = {A0F56308-AB21-45E8-8E3A-E59435B9AF27}
 		{55999DA5-386E-49AA-8954-103CCF3454F4} = {A0F56308-AB21-45E8-8E3A-E59435B9AF27}
+		{6EF851B6-563C-4177-AD93-5112434BA478} = {D5179786-89E5-4B7C-B959-DC8F57C571CA}
+		{34306C28-16DF-4300-804A-EAFFC279DC7F} = {6EF851B6-563C-4177-AD93-5112434BA478}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {25BEF468-D543-41B7-ABFD-083785E2B8B5}

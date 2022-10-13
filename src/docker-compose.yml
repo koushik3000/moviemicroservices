@@ -5,9 +5,19 @@ services:
   bookingdb:
     image: mcr.microsoft.com/mssql/server:2017-latest
 
+  paymentdb:
+    image: redis:alpine
+
   booking.api:
     image: ${DOCKER_REGISTRY-}bookingapi
     build:
       context: .
       dockerfile: Services/Booking/Booking.API/Dockerfile
+
+
+  payment.api:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: Payment/Payment.API/Dockerfile
 

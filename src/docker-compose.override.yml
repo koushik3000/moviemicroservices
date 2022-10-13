@@ -12,6 +12,11 @@ services:
     ports:
         - "1433:1433"
 
+  paymentdb:
+    container_name: paymentdb
+    restart: always
+    ports:
+      - "6379:6379"
 
   booking.api:
     environment:
@@ -20,4 +25,14 @@ services:
     depends_on:
       - bookingdb
     ports:
-      - "2005:80"
+      - "2004:80"
+
+  payment.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "CacheSettings:ConnectionString=paymentdb:6379"
+    depends_on:
+      - paymentdb
+    ports:
+      - "2006:80"
+
