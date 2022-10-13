@@ -1,0 +1,43 @@
+name: dockercompose7853558426159025909
+services:
+  moviedb:
+    container_name: moviedb
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "27017"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
+  movies.api:
+    build:
+      context: C:\Users\Koushik Mamilla\source\repos\moviemicroservices\src
+      dockerfile: Services/Movies/Movies.API/Dockerfile
+    container_name: movies.api
+    depends_on:
+      moviedb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: mongodb://moviedb:27017
+    image: moviesapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "2000"
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose7853558426159025909_default
+volumes:
+  mongo_data:
+    name: dockercompose7853558426159025909_mongo_data
