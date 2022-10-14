@@ -51,5 +51,17 @@ namespace Payment.API.Controllers
             return Ok(_paymentRepository.GetAllPaymentDetails());
         }
 
+        [HttpPut]
+        public ActionResult<PaymentDetails> UpdatePayment(PaymentDetails payment)
+        {
+            _paymentRepository.UpdatePaymentDetails(payment);
+            return Ok(payment);
+        }
+        [HttpDelete]
+        public ActionResult<bool> DeletePayment(string userName)
+        {
+            _paymentRepository.DeletePayment(userName);
+            return true;
+        }
     }
 }

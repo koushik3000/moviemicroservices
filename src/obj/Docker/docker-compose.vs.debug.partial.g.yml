@@ -12,19 +12,46 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_booking.api$
     volumes:
       - C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Booking\Booking.API:/app
       - C:\Users\phani\Source\Repos\moviemicroservices\src:/src
       - C:\Users\phani\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\phani\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_booking.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_booking.api$ \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+  payment.api:
+    image: paymentapi:dev
+    container_name: Payment.API
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Payment.API"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_payment.api$
+    volumes:
+      - C:\Users\phani\Source\Repos\moviemicroservices\src\Payment\Payment.API:/app
+      - C:\Users\phani\Source\Repos\moviemicroservices\src:/src
+      - C:\Users\phani\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_payment.api$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_payment.api$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true

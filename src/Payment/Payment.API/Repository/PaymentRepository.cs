@@ -61,6 +61,24 @@ namespace Payment.API.Repository
             return null;
         }
 
-        
+        public IEnumerable<PaymentDetails> UpdatePaymentDetails(PaymentDetails payment)
+        {
+            var db = _connectionMultiplexer.GetDatabase();
+            var serial = JsonSerializer.Serialize(payment);
+
+            //var set = db.SetMembers("PaymentDetails");
+            db.StringSet(payment.UserName, serial);
+            return GetPaymentDetails(payment.UserName);
+
+            
+        }
+
+        public bool DeletePayment(string userName)
+        {
+            var db = _connectionMultiplexer.GetDatabase();
+            
+            db.KeyDelete(userName);
+            return true;
+        }
     }
 }

@@ -12,6 +12,11 @@ namespace Payment.API.Repository
         void CreatePayment(PaymentDetails payment);
         IEnumerable<PaymentDetails> GetAllPaymentDetails();
 
+        IEnumerable<PaymentDetails> UpdatePaymentDetails(PaymentDetails userName);
+
+        bool DeletePayment(string userName);
+
+
 
 
     }
