@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+
+  ShowDetailsDb:
+    image: postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+
+  showdetails.api:
+    image: ${DOCKER_REGISTRY-}showdetailsapi
+    build:
+      context: .
+      dockerfile: Services/ShowDetails/ShowDetails.API/Dockerfile
+
+volumes:
+    postgres_data:
+    pgadmin_data:
+  

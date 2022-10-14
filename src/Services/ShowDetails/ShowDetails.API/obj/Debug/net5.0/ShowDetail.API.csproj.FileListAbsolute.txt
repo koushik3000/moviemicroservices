@@ -1,0 +1,6 @@
+C:\Users\Anil\Source\Repos\moviemicroservices\src\Services\ShowDetails\ShowDetails.API\obj\Debug\net5.0\ShowDetail.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anil\Source\Repos\moviemicroservices\src\Services\ShowDetails\ShowDetails.API\obj\Debug\net5.0\ShowDetail.API.AssemblyInfoInputs.cache
+C:\Users\Anil\Source\Repos\moviemicroservices\src\Services\ShowDetails\ShowDetails.API\obj\Debug\net5.0\ShowDetail.API.AssemblyInfo.cs
+C:\Users\Anil\Source\Repos\moviemicroservices\src\Services\ShowDetails\ShowDetails.API\obj\Debug\net5.0\ShowDetail.API.csproj.CoreCompileInputs.cache
+C:\Users\Anil\Source\Repos\moviemicroservices\src\Services\ShowDetails\ShowDetails.API\obj\Debug\net5.0\ShowDetail.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Anil\Source\Repos\moviemicroservices\src\Services\ShowDetails\ShowDetails.API\obj\Debug\net5.0\ShowDetail.API.MvcApplicationPartsAssemblyInfo.cache

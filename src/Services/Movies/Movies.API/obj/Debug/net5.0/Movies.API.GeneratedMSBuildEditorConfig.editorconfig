@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Movies.API
-build_property.ProjectDir = C:\Users\phani\Source\Repos\moviemicroservices\src\Services\Movies\Movies.API\
+build_property.ProjectDir = C:\Users\Anil\Source\Repos\moviemicroservices\src\Services\Movies\Movies.API\

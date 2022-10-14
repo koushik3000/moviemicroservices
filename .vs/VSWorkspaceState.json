@@ -1,4 +1,13 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\bin",
+    "\\src\\obj",
+    "\\src\\Services",
+    "\\src\\Services\\ShowDetails",
+    "\\src\\Services\\ShowDetails\\ShowDetails.API"
+  ],
+  "SelectedNode": "\\src\\Services\\ShowDetails\\ShowDetails.API\\ShowDetails.API.csproj",
   "PreviewInSolutionExplorer": false
 }
