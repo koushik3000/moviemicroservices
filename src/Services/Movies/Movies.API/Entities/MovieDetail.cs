@@ -22,7 +22,7 @@ namespace Movies.API.Entities
         public string Description { get; set; }
         public int Releaseyear { get; set; }
         public string ImageFile { get; set; }
-        public object City { get; set; }
+        
 
 
     }

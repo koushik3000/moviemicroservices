@@ -13,7 +13,11 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bevaregas", "Bevaregas", "{0475BD1D-0A0A-4D72-BAD5-D9EFEF71EF2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bevaregas", "Services\bevaregas\bevaregas\bevaregas.csproj", "{5CFF041B-2A3E-4412-AD91-8A35BD0F9BF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bevaregas", "Services\bevaregas\bevaregas\bevaregas.csproj", "{5CFF041B-2A3E-4412-AD91-8A35BD0F9BF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teatres", "Teatres", "{7BB3060A-974F-4A5F-8B78-96AF3A8ACB81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teatres.APi", "Services\Teatres\Teatres.APi\Teatres.APi.csproj", "{91A0D76A-8BE7-4CD3-963A-4C875811C27C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{5CFF041B-2A3E-4412-AD91-8A35BD0F9BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CFF041B-2A3E-4412-AD91-8A35BD0F9BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CFF041B-2A3E-4412-AD91-8A35BD0F9BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A0D76A-8BE7-4CD3-963A-4C875811C27C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A0D76A-8BE7-4CD3-963A-4C875811C27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A0D76A-8BE7-4CD3-963A-4C875811C27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A0D76A-8BE7-4CD3-963A-4C875811C27C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +50,8 @@ Global
 		{7C272A99-3C8F-4B31-B5A3-0949ADC10E72} = {1EF1F064-F86A-4481-AA41-F1C7238355FD}
 		{0475BD1D-0A0A-4D72-BAD5-D9EFEF71EF2F} = {D5179786-89E5-4B7C-B959-DC8F57C571CA}
 		{5CFF041B-2A3E-4412-AD91-8A35BD0F9BF7} = {0475BD1D-0A0A-4D72-BAD5-D9EFEF71EF2F}
+		{7BB3060A-974F-4A5F-8B78-96AF3A8ACB81} = {D5179786-89E5-4B7C-B959-DC8F57C571CA}
+		{91A0D76A-8BE7-4CD3-963A-4C875811C27C} = {7BB3060A-974F-4A5F-8B78-96AF3A8ACB81}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {25BEF468-D543-41B7-ABFD-083785E2B8B5}

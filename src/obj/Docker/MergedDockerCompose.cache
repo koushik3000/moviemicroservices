@@ -1,5 +1,35 @@
 name: dockercompose7853558426159025909
 services:
+  bevaragedb:
+    container_name: bevaragedb
+    image: redis:alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: "6379"
+      protocol: tcp
+    restart: always
+  bevaregas:
+    build:
+      context: C:\Users\Koushik Mamilla\source\repos\moviemicroservices\src
+      dockerfile: Services/bevaregas/bevaregas/Dockerfile
+    container_name: bevaregas
+    depends_on:
+      bevaragedb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      CacheSettings:ConnectionString: bevaragedb:6379
+    image: bevaregas
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "2001"
+      protocol: tcp
   moviedb:
     container_name: moviedb
     image: mongo
