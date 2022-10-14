@@ -23,8 +23,6 @@ namespace Booking.API.Controllers
         }
 
         [HttpPost(Name = "PostBooking")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
-
         public async Task<ActionResult<TicketBooking>> PostBooking([FromBody] TicketBooking booking)
         {
             var result = await _repository.PostBooking(booking);
@@ -32,7 +30,6 @@ namespace Booking.API.Controllers
         } 
 
         [HttpGet(Name = "GetAllBookings")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<TicketBooking>>> GetAllBookings()
         {
             var res = await _repository.GetAllBookings();
@@ -41,8 +38,6 @@ namespace Booking.API.Controllers
         }
 
         [HttpGet("{userName}",Name = "GetTicketBookingsByUsername")]
-      //  [Route("GetTicketBookingsByUsername")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<TicketBooking>>> GetTicketBookingsByUsername(string userName)
         {
             var res = await _repository.GetTicketBookingsByUsername(userName);
@@ -51,7 +46,6 @@ namespace Booking.API.Controllers
         }
         [HttpGet]
         [Route("GetSeatNumberByDate")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<TicketBooking>>> GetSeatNumberByDate(string date)
         {
             var res = await _repository.GetSeatNumberByDate(date);
@@ -60,7 +54,6 @@ namespace Booking.API.Controllers
         }
 
         [HttpPut(Name = "UpdateBooking")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<TicketBooking>>> UpdateBooking([FromBody] TicketBooking booking)
         {
             var res = await _repository.UpdateBooking(booking);
@@ -69,7 +62,6 @@ namespace Booking.API.Controllers
         }
 
         [HttpDelete("{id}",Name = "DeleteBooking")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<bool>> DeleteBooking(int id)
         {
             var res = await _repository.DeleteBooking(id);

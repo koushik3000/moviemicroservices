@@ -23,3 +23,17 @@ C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Microsoft.Extension
 C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Booking.Domain.pdb
 C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Payment.API.deps.json
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Payment.API.runtimeconfig.json
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Payment.API.runtimeconfig.dev.json
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Payment.API.exe
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Payment.API.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\StackExchange.Redis.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\phani\Source\Repos\moviemicroservices\src\bin\Debug\Payment.API.pdb
